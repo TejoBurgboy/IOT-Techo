@@ -6,5 +6,8 @@ Vak: IOT
 Datum 6-10-2022
 <br>
 <br>
-# instaleer Adafruit IO
-De eerste stap is om in de libary Adafruit_IO_Arduino te instaleren.
+# (1) instaleer Adafruit IO
+De eerste stap is om in de libary Adafruit IO Arduino te instaleren.
+<br>
+# (2) maak een acount aan op Adafruit IO
+Maak een acount aan op [adafruit IO](https://io.adafruit.com/)
