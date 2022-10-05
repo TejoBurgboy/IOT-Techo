@@ -6,6 +6,11 @@ Vak: IOT
 Datum 6-10-2022
 <br>
 <br>
+## Benodigdheden
+1. Arduino.
+2. Ledstrip arduino.
+3. een laptop met arduino IDe geinstaleerd.
+<br>
 ## (1) instaleer Adafruit IO
 De eerste stap is om in de libary Adafruit IO Arduino te instaleren. Deze staat niet meteen boven aan je moet wel eerst een paar naar beneden scrollen.
 <br>
