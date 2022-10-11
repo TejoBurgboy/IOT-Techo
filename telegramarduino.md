@@ -154,4 +154,5 @@ void loop() {
   }
 }
 ```
-After that chage a few things. bij const char change the ssid and the password into the ones of your wifi. Verander de ledpin naar D5. Vul bij bottoken de token van je bot in. En de ID van van je chat moet je invullen Bij CHAT_ID. Zorg daarna dat je juist board en port gekozen heb. Veriveer ook je code daarna nog.
+After that chage a few things. bij const char change the ssid and the password into the ones of your wifi. Verander de ledpin naar D5. Vul bij bottoken de token van je bot in. En de ID van van je chat moet je invullen Bij CHAT_ID. Zorg daarna dat je juist board en port gekozen heb. Veriveer ook je code daarna nog. Als je dat lukt upload je code.
+<br>
