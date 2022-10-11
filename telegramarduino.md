@@ -154,5 +154,10 @@ void loop() {
   }
 }
 ```
-After that chage a few things. bij const char change the ssid and the password into the ones of your wifi. Verander de ledpin naar D5. Vul bij bottoken de token van je bot in. En de ID van van je chat moet je invullen Bij CHAT_ID. Zorg daarna dat je juist board en port gekozen heb. Veriveer ook je code daarna nog. Als je dat lukt upload je code.
+After that chage a few things. bij const char change the ssid and the password into the ones of your wifi. Vul bij bottoken de token van je bot in. En de ID van van je chat moet je invullen Bij CHAT_ID. Zorg daarna dat je juist board en port gekozen heb. Veriveer ook je code daarna nog. Als je dat lukt upload je code. Als er een lampje op je aruino brandt doet ie het.
 <br>
+## (5) Ledpin error
+Ik had opbasis van de eerste opdrachten de Ledpin naar D5 verandert hierdoor zag ik geen licht als ik iets zei op telegram. Later toen ik het terug veranderde naar 2 deed het lampje het wel als ik de juiste input had.
+<br>
+##bronnen
+[Telegram control](https://randomnerdtutorials.com/telegram-control-esp32-esp8266-nodemcu-outputs/)
