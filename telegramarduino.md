@@ -29,7 +29,8 @@ Zorg dat je van arduino ESP8266 of ESP32 geinstaleerd heb en ook de bijbehorde b
 
 ## (4) Arduino Code.
 Open Arduino en plak deze code erin.
-`#ifdef ESP32
+```
+#ifdef ESP32
   #include <WiFi.h>
 #else
   #include <ESP8266WiFi.h>
@@ -151,4 +152,5 @@ void loop() {
     }
     lastTimeBotRan = millis();
   }
-}`
+}
+```
