@@ -30,7 +30,7 @@ Zorg dat je van arduino ESP8266 of ESP32 geinstaleerd heb en ook de bijbehorde b
 ## (4) Arduino Code.
 Open Arduino en plak deze code erin.
 ```
-#ifdef ESP32
+#ifdef ESP8266
   #include <WiFi.h>
 #else
   #include <ESP8266WiFi.h>
@@ -95,13 +95,13 @@ void handleNewMessages(int numNewMessages) {
 
     if (text == "/led_on") {
       bot.sendMessage(chat_id, "LED state set to ON", "");
-      ledState = HIGH;
+      ledState = LOW;
       digitalWrite(ledPin, ledState);
     }
     
     if (text == "/led_off") {
       bot.sendMessage(chat_id, "LED state set to OFF", "");
-      ledState = LOW;
+      ledState = HIGH;
       digitalWrite(ledPin, ledState);
     }
     
@@ -154,3 +154,4 @@ void loop() {
   }
 }
 ```
+After that chage a few things. bij const char change the ssid and the password into the ones of your wifi. Verander de ledpin naar D5. Vul bij bottoken de token van je bot in. En de ID van van je chat moet je invullen Bij CHAT_ID. Zorg daarna dat je juist board en port gekozen heb. Veriveer ook je code daarna nog.
