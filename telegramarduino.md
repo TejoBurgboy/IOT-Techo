@@ -3,7 +3,7 @@ Name: Tejo van der Burg
 <br>
 Vak: IOT
 <br>
-Datum 6-10-2022
+Datum 12-10-2022
 <br>
 <br>
 
@@ -16,10 +16,12 @@ Datum 6-10-2022
 
 ## (1) Telegram Botfather
 Open deze [link](https://t.me/botfather) op je telefoon. Als dat goed gaat opent telegram en start je een gesprek met de BotFather. Klik op begin en dan doet hij automatish /start voor je op android. Vervolg dit met een /newbot. Geef de bot een naam en een username. Nu krijg je een lang bericht met een link en een code bewaar die beide.
+![Botfather](bot.jfif)
 <br>
 
 ## (2) Telegram Idbot
 Open deze [link](https://t.me/myidbot) op je telefoon. Dit doet hetzelfde als bij de bot father en klik op begin. Stuur nu naar deze bot /getid. Nu krijg je een ID te zien bewaar ook deze.
+![Idbot](bot2.jfif)
 <br>
 
 
@@ -155,6 +157,7 @@ void loop() {
 }
 ```
 After that chage a few things. bij const char change the ssid and the password into the ones of your wifi. Vul bij bottoken de token van je bot in. En de ID van van je chat moet je invullen Bij CHAT_ID. Zorg daarna dat je juist board en port gekozen heb. Veriveer ook je code daarna nog. Als je dat lukt upload je code. Als er een lampje op je aruino brandt doet ie het.
+![Idbot](lamp_aan.jfif)
 <br>
 ## (5) Ledpin error
 Ik had opbasis van de eerste opdrachten de Ledpin naar D5 verandert hierdoor zag ik geen licht als ik iets zei op telegram. Later toen ik het terug veranderde naar 2 deed het lampje het wel als ik de juiste input had.
