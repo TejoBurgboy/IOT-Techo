@@ -6,21 +6,27 @@ Vak: IOT
 Datum 6-10-2022
 <br>
 <br>
+
 ## Benodigdheden
 1. Arduino.
 2. Ledstrip arduino.
 3. een laptop met arduino IDe geinstaleerd.
 4. Een mobiel met Telegram erop geinstaleerd.
 <br>
+
 ## (1) Telegram Botfather
 Open deze [link](https://t.me/botfather) op je telefoon. Als dat goed gaat opent telegram en start je een gesprek met de BotFather. Klik op begin en dan doet hij automatish /start voor je op android. Vervolg dit met een /newbot. Geef de bot een naam en een username. Nu krijg je een lang bericht met een link en een code bewaar die beide.
 <br>
+
 ## (2) Telegram Idbot
 Open deze [link](https://t.me/myidbot) op je telefoon. Dit doet hetzelfde als bij de bot father en klik op begin. Stuur nu naar deze bot /getid. Nu krijg je een ID te zien bewaar ook deze.
 <br>
+
+
 ## (3) Arduino voorbereiding.
 Zorg dat je van arduino ESP8266 of ESP32 geinstaleerd heb en ook de bijbehorde borden heb. Instaleerd door ook [de universal telegram bot via deze link](https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot/archive/master.zip). Na het downloaden van de zip ga je naar sketch>include Libary> add.zip Libary.... Than add the libary. Tot slot ga naar sketch>include libary> manage libary. Er zoek dan naar de ArduinoJson en instaleer die.
 <br>
+
 ## (4) Arduino Code.
 Open Arduino en plak deze code erin.
 `#ifdef ESP32
