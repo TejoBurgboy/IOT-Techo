@@ -166,4 +166,4 @@ After that chage a few things. bij const char change the ssid and the password i
 Ik had opbasis van de eerste opdrachten de Ledpin naar D5 verandert hierdoor zag ik geen licht als ik iets zei op telegram. Later toen ik het terug veranderde naar 2 deed het lampje het wel als ik de juiste input had.
 <br>
 ## Bronnen
-*[Telegram control](https://randomnerdtutorials.com/telegram-control-esp32-esp8266-nodemcu-outputs/)
+[Telegram control](https://randomnerdtutorials.com/telegram-control-esp32-esp8266-nodemcu-outputs/)
