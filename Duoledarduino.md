@@ -1,4 +1,4 @@
-# Duo adrduino
+# Duo arduino :smiley::smiley::smiley::smiley::smiley::smiley::smiley::smiley::smiley:
 Name: Tejo van der Burg 
 <br>
 Vak: IOT
