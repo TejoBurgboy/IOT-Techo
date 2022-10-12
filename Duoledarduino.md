@@ -13,3 +13,14 @@ Datum 13-10-2022
 3. knop arduino.
 4. twee laptop met arduino IDe geinstaleerd.
 <br>
+
+
+##Intro
+
+<br>
+
+## Error (1) Verkeerde comport
+Error
+<br>
+
+## Error (2) Geen wifi verbinding want hotspot is scheit
