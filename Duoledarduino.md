@@ -1,4 +1,4 @@
-# Duo arduino :smiley::smiley::smiley::smiley::smiley::smiley::smiley::smiley::smiley:
+# Duo arduino :smiley:
 Name: Tejo van der Burg 
 <br>
 Vak: IOT
@@ -7,7 +7,7 @@ Datum 13-10-2022
 <br>
 <br>
 
-## Benodigdheden :smiley:
+## Benodigdheden 
 1. Arduino.
 2. Ledstrip arduino.
 3. knop arduino.
@@ -16,16 +16,16 @@ Datum 13-10-2022
 <br>
 
 
-## Intro :smiley:
+## Intro 
 Voor deze opdracht moest ik samen met een klasgenoot in dit geval Simon. De een moestervoor zorgen dat doormiddel van een knop er iets in de serial monitor van de ander word gezet. Ik leg hierbij het ontvang gedeelte uit.
 
 <br>
 
-## Stap (1) Arduino openen :smiley:
+## Stap (1) Arduino openen
 Open Arduino ga bij file naar examples Adafruit Io Arduiono en kies dan AdafruitIO_21_feed_read. Daarnaast kies je juiste board en poort.
 <br>
 
-## Stap (2) Instelingen :smiley:
+## Stap (2) Instelingen 
 Ga in de config file je wifi en Adafruit IO gegevens neerzetten. Ook moet je de naam en de feed van adafruitIO neerzetten in je main document.
 
 
