@@ -1,7 +1,7 @@
 # Duo arduino :smiley:
 Name: Tejo van der Burg 
 <br>
-Vak: IOT
+Subject: IOT
 <br>
 Date 27-10-2022
 <br>
@@ -134,7 +134,7 @@ if ( currentHour == 14) {
 If it is 14 you will get a message in your serial monitor along the lines Hallo it it is 14. If that is not the cade you will get the message hello it is not 14. Also don't forget to put two of a '=='instead one.
 
 ## (4) The importance of the else in the if else.
-When i copyied the code from the adafruit code to the one of the time i acidentaly copied a } to much then i got this error ![One braket to much](iot_images/error1.png)
+So when i used the If else for the first time evrytime i uploaded the code it would always do the if even if i changed to hour to a hour it was not a that point. At this point i actually did not use a else. But when i started using a else it would work immediately. So if you use a if in your arduino code give it a else otherwise the arduino will always do the if even if it's not correct.
 
 ## (5) Adafruit joins the party
 So the next step is to add adafruit in the conversation. Go to examples then go to adafruit neo pixel and than go to simple
@@ -215,11 +215,12 @@ if ( currentHour == 14) {
 If you upload the code this will give the ledstrip a silver light if it is the 14th hour of the day if it is any other hour the light will turn into green.
 <br>
 ## (6) Error 2 forgetting a bracket
-When i copyied the code from the adafruit code to the one of the time i acidentaly copied a } to much then i got this error ![One braket to much](iot_images/error1.png). So the way to fix this is to find the bracket on the line where the error is given and delete the bracket.
+When i copyied the code from the adafruit code to the one of the time i acidentaly copied a } to much then i got this error ![One bracket to much](iot_images/error1.png). You can actualy see on wich line of the code the bracket stands on the error message. Use that to detect and delete the bracket.
 
-## (6) Error 3 Com port randomly dissapears
+## (7) Error 3 Com port randomly dissapears
+So at one point i saved my progress because i was scared to maybe lose my progress. So i did that but after the save when i uploaded some chages i got the following error message ![Can't find com port](iot_images/error2.png). So this is actually a error message that can be quite common in my case and is very easy to fix. So to fix this problem you need to close your arduino program and just re open it. Than select the right board and comport and your good to go.
 
-## (7) Make is ready for the night
+## (8) Make is ready for the night
 So the last step is to make it ready for the night. I decided to code it that from 0 to 8 the night mode in activated the rest of the day the light is the day version. I dit this with a >.
 ~~~
 if ( currentHour > 8){
@@ -254,3 +255,7 @@ if ( currentHour > 8){
 ### Night
 ![Light during the Night](iot_images/night.jfif)
 <br> 
+## List of used sources
+[Time Arduino](https://randomnerdtutorials.com/esp8266-nodemcu-date-time-ntp-client-server-arduino/)
+[If else in arduino](https://docs.arduino.cc/built-in-examples/control-structures/ifStatementConditional/)
+
