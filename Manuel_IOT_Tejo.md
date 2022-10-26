@@ -244,3 +244,10 @@ if ( currentHour > 8){
   }
   ~~~
  If you change the if else code in this you should be ready to go. Below you will see the day and the night version of the lights.
+ <br>
+### Day
+![Light during the day](iot_images/Day.jfif)
+<br> 
+### Day
+![Light during the Night](iot_images/Night.jfif)
+<br> 
