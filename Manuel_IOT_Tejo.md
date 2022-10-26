@@ -131,9 +131,12 @@ if ( currentHour == 14) {
       Serial.println("Hello it's not 14");
 }
 ~~~
-If it is 14 you will get a message in your serial monitor along the lines Hallo it it is 14. If that is not the cade you will get the message hello it is not 14.
+If it is 14 you will get a message in your serial monitor along the lines Hallo it it is 14. If that is not the cade you will get the message hello it is not 14. Also don't forget to put two of a '=='instead one.
 
-## (4) Adafruit joins the party
+## (5) The importance of the else in the if else.
+When i copyied the code from the adafruit code to the one of the time i acidentaly copied a } to much then i got this error ![One braket to much](iot_images/error1.png)
+
+## (5) Adafruit joins the party
 So the next step is to add adafruit in the conversation. Go to examples then go to adafruit neo pixel and than go to simple
 an then copy certain parts of the code in certain places.
 Copy this between en libarys and the wifi settings.
@@ -182,7 +185,7 @@ void loop() {
 As last change the if else statements made in step 4 into this.
 ~~~
 if ( currentHour == 14) {
-    Serial.println("Hallo het is 14");
+    Serial.println("Hello it's 14");
   for(int i=0; i<NUMPIXELS; i++) { // For each pixel...
 
     // pixels.Color() takes RGB values, from 0,0,0 up to 255,255,255
@@ -194,7 +197,7 @@ if ( currentHour == 14) {
     delay(DELAYVAL); // Pause before next pass through loop
   }
 }else{
-      Serial.println("Suck it boys");
+      Serial.println("Hello it's not 14");
         for(int i=0; i<NUMPIXELS; i++) { // For each pixel...
 
     // pixels.Color() takes RGB values, from 0,0,0 up to 255,255,255
@@ -209,5 +212,36 @@ if ( currentHour == 14) {
 ~~~
 If you upload the code this will give the ledstrip a silver light if it is the 14th hour of the day if it is any other hour the light will turn into green.
 <br>
-## (5) Error 1
-When i copyied the code from the adafruit code to the one of the time i acidentaly copied a } to much then i got this error ![One braket to much](iot_images/error1.png)
+## (6) Error 2 forgetting a bracket
+When i copyied the code from the adafruit code to the one of the time i acidentaly copied a } to much then i got this error ![One braket to much](iot_images/error1.png). So the way to fix this is to find the bracket on the line where the error is given and delete the bracket.
+
+## (7) Error 3 Com port randomly dissapears
+
+## (8) Make is ready for the night
+So the last step is to make it ready for the night. I decided to code it that from 0 to 8 the night mode in activated the rest of the day the light is the day version. I dit this with a >.
+~~~
+if ( currentHour > 8){
+    Serial.println("Het is dag");
+  for(int i=0; i<NUMPIXELS; i++) { // For each pixel...
+
+    // pixels.Color() takes RGB values, from 0,0,0 up to 255,255,255
+    // Here we're using a moderately bright green color:
+        pixels.setPixelColor(i, pixels.Color(0, 132,213));
+
+    pixels.show();   // Send the updated pixel colors to the hardware.
+
+    delay(DELAYVAL); // Pause before next pass through loop
+  }
+}else{
+      Serial.println("het is nacht");
+        for(int i=0; i<NUMPIXELS; i++) { // For each pixel...
+
+    // pixels.Color() takes RGB values, from 0,0,0 up to 255,255,255
+    // Here we're using a moderately bright green color:
+        pixels.setPixelColor(i, pixels.Color(180, 92, 12));
+    pixels.show();   // Send the updated pixel colors to the hardware.
+
+    delay(DELAYVAL); // Pause before next pass through loop
+  }
+  ~~~
+ If you change the if else code in this you should be ready to go. Below you will see the day and the night version of the lights.
