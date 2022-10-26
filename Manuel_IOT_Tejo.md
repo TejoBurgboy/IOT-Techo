@@ -193,7 +193,6 @@ if ( currentHour == 14) {
         pixels.setPixelColor(i, pixels.Color(123, 132,213));
 
     pixels.show();   // Send the updated pixel colors to the hardware.
-
     delay(DELAYVAL); // Pause before next pass through loop
   }
 }else{
