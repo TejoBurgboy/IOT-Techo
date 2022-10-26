@@ -136,7 +136,7 @@ If it is 14 you will get a message in your serial monitor along the lines Hallo 
 ## (5) The importance of the else in the if else.
 When i copyied the code from the adafruit code to the one of the time i acidentaly copied a } to much then i got this error ![One braket to much](iot_images/error1.png)
 
-## (5) Adafruit joins the party
+## (6) Adafruit joins the party
 So the next step is to add adafruit in the conversation. Go to examples then go to adafruit neo pixel and than go to simple
 an then copy certain parts of the code in certain places.
 Copy this between en libarys and the wifi settings.
