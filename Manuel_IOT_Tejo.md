@@ -130,5 +130,5 @@ if ( currentHour == 14) {
       Serial.println("Hello it's not 14");
 }
 ~~~
-If it is 14 you will get a message in your serial monitor along the lines Hallo it it is 14. If that is not the cade you will get the message hello it is; g not 14.
+If it is 14 you will get a message in your serial monitor along the lines Hallo it it is 14. If that is not the cade you will get the message hello it is not 14.
 
