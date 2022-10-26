@@ -121,7 +121,7 @@ Change by the wifi settings the ssid and password to yours.
 If that is the case you will get in your serial monitor a message.
 
 ##(3) If Else with a certain time
-Add this code:
+Add this code all the way down in the void loop.
 ~~~
 if ( currentHour == 14) {
     Serial.println("Hello it is 14");
