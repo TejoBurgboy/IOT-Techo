@@ -183,7 +183,9 @@ void loop() {
 ~~~
 <br>
 At last change the if else statements made in step 4 into this.
+
 ~~~
+
 if ( currentHour == 14) {
     Serial.println("Hello it's 14");
   for(int i=0; i<NUMPIXELS; i++) { // For each pixel...
@@ -209,6 +211,7 @@ if ( currentHour == 14) {
   }
 }
 ~~~
+
 If you upload the code this will give the ledstrip a silver light if it is the 14th hour of the day if it is any other hour the light will turn into green.
 <br>
 ## (6) Error 2 forgetting a bracket
