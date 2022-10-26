@@ -14,11 +14,11 @@ Date 27-10-2022
 <br>
 
 ## Intro
-So for a school subject called IOT wich is about the internet of things. I made an idea of a smart bed. One of the features was that the lighting in the room will change depending on the day night cycle. With overday a bright light and over night a more orangy light. So in this manual i will explain how to make a light differece between day and night thanks to arduino and the ledstrip of arduino.
+So for a school subject called IOT which is about the internet of things. I made an idea of a smart bed. One of the features was that the lighting in the room will change depending on the day night cycle. With over day a bright light and overnight a more orange light. So in this manual I will explain how to make a light difference between day and night thanks to Arduino and the led strip of Arduino.
 <br>
 
-## (1) Libary
-Instal the libary called NTPClinent by Fabrice Weinberg.
+## (1) Library
+Instal the library called NTPClinent by Fabrice Weinberg.
 
 ## (2) Copy the code
 Before you set up the code don't forget to choose the right board and the right com port. 
@@ -120,7 +120,7 @@ void loop() {
   delay(2000);
 }
 ~~~
-Change by the wifi settings the ssid and password to yours.
+Change by the WIFI settings the ssid and password to yours.
 If that is the case you will get in your serial monitor a message.
 
 ## (3) If Else with a certain time
@@ -133,15 +133,15 @@ if ( currentHour == 14) {
       Serial.println("Hello it's not 14");
 }
 ~~~
-If it is 14 you will get a message in your serial monitor along the lines Hallo it it is 14. If that is not the cade you will get the message hello it is not 14. Also don't forget to put two of a '=='instead one.
+If it is 14 you will get this message on your serial monitor “Hello it is 14”. If that is not the case you will get the message “Hello it is not 14”. Also don't forget to put two of a '=='instead one.
 
 ## (4) The importance of the else in the if else.
-So when i used the If else for the first time evrytime i uploaded the code it would always do the if even if i changed to hour to a hour it was not a that point. At this point i actually did not use a else. But when i started using a else it would work immediately. So if you use a if in your arduino code give it a else otherwise the arduino will always do the if even if it's not correct.
+So when I used the If else for the first time every time I uploaded the code it would always do the if even if I changed the hour to a hour it was not at the time. At this point I actually did not use a else. But when I started using a else it would work immediately. So if you use an if in your Arduino code give it a else otherwise the Arduino will always do the if even if it's not correct.
 
 ## (5) Adafruit joins the party
-So the next step is to add adafruit in the conversation. Go to examples then go to adafruit neo pixel and than go to simple
+So the next step is to add adafruit in the conversation. Go to examples then go to adafruit neo pixel and then go to simple
 an then copy certain parts of the code in certain places.
-Copy this between en libarys and the wifi settings.
+Copy this between the library’s and the WIFI settings.
 ~~~
 #include <Adafruit_NeoPixel.h>
 #ifdef __AVR__
@@ -214,19 +214,19 @@ if ( currentHour == 14) {
 }
 ~~~
 
-If you upload the code this will give the ledstrip a silver light if it is the 14th hour of the day if it is any other hour the light will turn into green.
+If you upload the code this will give the led strip a silver light if it is the 14th hour of the day if it is any other hour the light will turn into green.
 <br>
 ## (6) Error 2 forgetting a bracket
-When i copyied the code from the adafruit code to the one of the time i acidentaly copied a } to much then i got this error ![One bracket to much](iot_images/error1.png). You can actualy see on wich line of the code the bracket stands on the error message. Use that to detect and delete the bracket.
+When I copied the code from the adafruit code to the one of the time I accidentally copied a } to much then I got this error ![One bracket to much](iot_images/error1.png). You can actually see on which line of the code the bracket stands on the error message. Use that to detect and delete the bracket.
 
-## (7) Error 3 Com port randomly dissapears
-So at one point i saved my progress because i was scared to maybe lose my progress. So i did that but after the save when i uploaded some chages i got the following error message ![Can't find com port](iot_images/error2.png). So this is actually a error message that can be quite common in my case and is very easy to fix. So to fix this problem you need to close your arduino program and just re open it. Than select the right board and comport and your good to go.
+## (7) Error 3 Com port randomly disappears
+So at one point I saved my progress because I was scared to maybe lose my progress. So I did that but after the save when I uploaded some changes I got the following error message ![Can't find com port](iot_images/error2.png). So this is actually an error message that can be quite common in my case and is very easy to fix. So to fix this problem you need to close your Arduino program and just re open it. Than select the right board and comport and your good to go.
 
 ## (8) Make is ready for the night
-So the last step is to make it ready for the night. I decided to code it that from 0 to 8 the night mode in activated the rest of the day the light is the day version. I dit this with a >.
+So the last step is to make it ready for the night. I decided to code it that from 0 to 8 the night mode in activated the rest of the day the light is the day version. The way I did this was with an > sign.
 ~~~
 if ( currentHour > 8){
-    Serial.println("Het is dag");
+    Serial.println("it’s day");
   for(int i=0; i<NUMPIXELS; i++) { // For each pixel...
 
     // pixels.Color() takes RGB values, from 0,0,0 up to 255,255,255
@@ -238,7 +238,7 @@ if ( currentHour > 8){
     delay(DELAYVAL); // Pause before next pass through loop
   }
 }else{
-      Serial.println("het is nacht");
+      Serial.println("It’s night");
         for(int i=0; i<NUMPIXELS; i++) { // For each pixel...
 
     // pixels.Color() takes RGB values, from 0,0,0 up to 255,255,255
