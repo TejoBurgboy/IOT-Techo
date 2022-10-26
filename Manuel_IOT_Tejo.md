@@ -1,4 +1,4 @@
-# Arduino Day and night lighting :smiley:
+# Arduino day and night lighting :smiley:
 Name: Tejo van der Burg 
 <br>
 Subject: IOT
@@ -14,7 +14,7 @@ Date 27-10-2022
 <br>
 
 ## Intro
-So for a school subject called IOT which is about the internet of things. I made an idea of a smart bed. One of the features was that the lighting in the room will change depending on the day night cycle. With over day a bright light and overnight a more orange light. So in this manual I will explain how to make a light difference between day and night thanks to Arduino and the led strip of Arduino.
+So for a school subject called IOT which is about the internet of things I came up with an idea of a smart bed. One of the features was that the lighting in the room will change between day or night. With durting daytime a bright light and overnight a more orange light. So in this manual I will explain how to make a light difference between day and night thanks to Arduino and the led strip of Arduino.
 <br>
 
 ## (1) Library
@@ -121,7 +121,7 @@ void loop() {
 }
 ~~~
 Change by the WIFI settings the ssid and password to yours.
-If that is the case you will get in your serial monitor a message.
+If that is the case you will get in your serial monitor a message with the current day and time.
 
 ## (3) If Else with a certain time
 Add this code all the way down in the void loop.
@@ -133,14 +133,14 @@ if ( currentHour == 14) {
       Serial.println("Hello it's not 14");
 }
 ~~~
-If it is 14 you will get this message on your serial monitor “Hello it is 14”. If that is not the case you will get the message “Hello it is not 14”. Also don't forget to put two of a '=='instead one.
+If the hour is 14 you will get this message on your serial monitor “Hello it is 14”. If that is not the case you will get the message “Hello it is not 14”. Also don't forget to put two of a '=='instead of one.
 
-## (4) The importance of the else in the if else.
-So when I used the If else for the first time every time I uploaded the code it would always do the if even if I changed the hour to a hour it was not at the time. At this point I actually did not use a else. But when I started using a else it would work immediately. So if you use an if in your Arduino code give it a else otherwise the Arduino will always do the if even if it's not correct.
+## (4) Error 1 the importance of the else in the if else.
+So when I used the If else for the first time every time I uploaded the code it would always do the if even when I changed the hour to a hour it was not at the time. At this point I actually did not use an else statement. But when I started using an else statement it would work immediately. So if you use an if statement in your Arduino code give it an else statement otherwise the Arduino will always do the if even if it's not correct.
 
 ## (5) Adafruit joins the party
-So the next step is to add adafruit in the conversation. Go to examples then go to adafruit neo pixel and then go to simple
-an then copy certain parts of the code in certain places.
+So the next step is to add adafruit into the conversation. Go to examples then go to adafruit neo pixel and then go to simple
+an copy certain parts of the code in certain places.
 Copy this between the library’s and the WIFI settings.
 ~~~
 #include <Adafruit_NeoPixel.h>
@@ -220,10 +220,10 @@ If you upload the code this will give the led strip a silver light if it is the 
 When I copied the code from the adafruit code to the one of the time I accidentally copied a } to much then I got this error ![One bracket to much](iot_images/error1.png). You can actually see on which line of the code the bracket stands on the error message. Use that to detect and delete the bracket.
 
 ## (7) Error 3 Com port randomly disappears
-So at one point I saved my progress because I was scared to maybe lose my progress. So I did that but after the save when I uploaded some changes I got the following error message ![Can't find com port](iot_images/error2.png). So this is actually an error message that can be quite common in my case and is very easy to fix. So to fix this problem you need to close your Arduino program and just re open it. Than select the right board and comport and your good to go.
+So at one point I saved my progress because I was scared to maybe lose my progress. So I did that but after the save when I uploaded some changes I got the following error message ![Can't find com port](iot_images/error2.png). So this is actually an error message that can be quite common in my case and is very easy to fix. So to fix this problem you need to close your Arduino program and just re-open it. Than select the right board and com port and your good to go.
 
 ## (8) Make is ready for the night
-So the last step is to make it ready for the night. I decided to code it that from 0 to 8 the night mode in activated the rest of the day the light is the day version. The way I did this was with an > sign.
+So the last step is to make it ready for the night. I decided to code it that from 0 to 8 the night mode will be activated, the rest of the day the light is the day version. The way I did this was with an > sign.
 ~~~
 if ( currentHour > 8){
     Serial.println("it’s day");
