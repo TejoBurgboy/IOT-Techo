@@ -133,10 +133,10 @@ if ( currentHour == 14) {
 ~~~
 If it is 14 you will get a message in your serial monitor along the lines Hallo it it is 14. If that is not the cade you will get the message hello it is not 14. Also don't forget to put two of a '=='instead one.
 
-## (5) The importance of the else in the if else.
+## (4) The importance of the else in the if else.
 When i copyied the code from the adafruit code to the one of the time i acidentaly copied a } to much then i got this error ![One braket to much](iot_images/error1.png)
 
-## (6) Adafruit joins the party
+## (5) Adafruit joins the party
 So the next step is to add adafruit in the conversation. Go to examples then go to adafruit neo pixel and than go to simple
 an then copy certain parts of the code in certain places.
 Copy this between en libarys and the wifi settings.
@@ -217,9 +217,9 @@ If you upload the code this will give the ledstrip a silver light if it is the 1
 ## (6) Error 2 forgetting a bracket
 When i copyied the code from the adafruit code to the one of the time i acidentaly copied a } to much then i got this error ![One braket to much](iot_images/error1.png). So the way to fix this is to find the bracket on the line where the error is given and delete the bracket.
 
-## (7) Error 3 Com port randomly dissapears
+## (6) Error 3 Com port randomly dissapears
 
-## (8) Make is ready for the night
+## (7) Make is ready for the night
 So the last step is to make it ready for the night. I decided to code it that from 0 to 8 the night mode in activated the rest of the day the light is the day version. I dit this with a >.
 ~~~
 if ( currentHour > 8){
@@ -251,6 +251,6 @@ if ( currentHour > 8){
 ### Day
 ![Light during the day](iot_images/day.jfif)
 <br> 
-### Day
+### Night
 ![Light during the Night](iot_images/night.jfif)
 <br> 
