@@ -117,4 +117,4 @@ void loop() {
   delay(2000);
 }
 ~~~
-
+Change by the wifi settings the ssid and password to yours.
