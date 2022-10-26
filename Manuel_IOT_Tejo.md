@@ -162,7 +162,7 @@ Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 ~~~
 Don't forget to change the the pin into D5 and change the number om NUMPIXELS into the amount of your ledstrip.
 <br>
-Put the next type of code on the lower side of the void loop
+Put the next type of code on the lower side of the void loop.
 ~~~
 void loop() {
   pixels.clear(); // Set all pixel colors to 'off'
@@ -182,7 +182,7 @@ void loop() {
 }
 ~~~
 <br>
-As last change the if else statements made in step 4 into this.
+At last change the if else statements made in step 4 into this.
 ~~~
 if ( currentHour == 14) {
     Serial.println("Hello it's 14");
