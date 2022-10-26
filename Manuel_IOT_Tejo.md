@@ -208,3 +208,6 @@ if ( currentHour == 14) {
 }
 ~~~
 If you upload the code this will give the ledstrip a silver light if it is the 14th hour of the day if it is any other hour the light will turn into green.
+<br>
+## (5) Error 1
+When i copyied the code from the adafruit code to the one of the time i acidentaly copied a } to much then i got this error
