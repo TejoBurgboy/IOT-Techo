@@ -1,4 +1,4 @@
-# Duo arduino :smiley:
+# Arduino Day and night lighting :smiley:
 Name: Tejo van der Burg 
 <br>
 Subject: IOT
@@ -14,12 +14,14 @@ Date 27-10-2022
 <br>
 
 ## Intro
+So for a school subject called IOT wich is about the internet of things. I made an idea of a smart bed. One of the features was that the lighting in the room will change depending on the day night cycle. With overday a bright light and over night a more orangy light. So in this manual i will explain how to make a light differece between day and night thanks to arduino and the ledstrip of arduino.
 <br>
 
 ## (1) Libary
 Instal the libary called NTPClinent by Fabrice Weinberg.
 
 ## (2) Copy the code
+Before you set up the code don't forget to choose the right board and the right com port. 
 ~~~
 #include <ESP8266WiFi.h>
 #include <NTPClient.h>
