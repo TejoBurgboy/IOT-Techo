@@ -120,7 +120,7 @@ void loop() {
 Change by the wifi settings the ssid and password to yours.
 If that is the case you will get in your serial monitor a message.
 
-##(3) If Else with a certain time
+## (3) If Else with a certain time
 Add this code all the way down in the void loop.
 ~~~
 if ( currentHour == 14) {
