@@ -19,7 +19,8 @@ So for a school subject called IOT which is about the internet of things I came 
 
 ## (1) Library
 Instal the library called NTPClinent by Fabrice Weinberg.
-![The Libary](iot_images/ifelse.png)
+<br>
+![The Libary](iot_images/ntp.png)
 
 ## (2) Copy the code
 Before you set up the code don't forget to choose the right board and the right com port. 
