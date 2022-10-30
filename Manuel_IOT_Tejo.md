@@ -224,31 +224,7 @@ So at one point I saved my progress because I was scared to maybe lose my progre
 
 ## (8) Make is ready for the night
 So the last step is to make it ready for the night. I decided to code it that from 0 to 8 the night mode will be activated, the rest of the day the light is the day version. The way I did this was with an > sign.
-![~~~
-if ( currentHour > 8){
-    Serial.println("it’s day");
-  for(int i=0; i<NUMPIXELS; i++) { // For each pixel...
-
-    // pixels.Color() takes RGB values, from 0,0,0 up to 255,255,255
-    // Here we're using a moderately bright green color:
-        pixels.setPixelColor(i, pixels.Color(0, 132,213));
-
-    pixels.show();   // Send the updated pixel colors to the hardware.
-
-    delay(DELAYVAL); // Pause before next pass through loop
-  }
-}else{
-      Serial.println("It’s night");
-        for(int i=0; i<NUMPIXELS; i++) { // For each pixel...
-
-    // pixels.Color() takes RGB values, from 0,0,0 up to 255,255,255
-    // Here we're using a moderately bright green color:
-        pixels.setPixelColor(i, pixels.Color(180, 92, 12));
-    pixels.show();   // Send the updated pixel colors to the hardware.
-
-    delay(DELAYVAL); // Pause before next pass through loop
-  }
-  ~~~](iot_images/timepoint.png)
+![Code to make it that when it's before 8AM the color of the light is different](iot_images/timepoint.png)
  If you change the if else code in this you should be ready to go. Below you will see the day and the night version of the lights.
  <br>
 ## List of used sources
