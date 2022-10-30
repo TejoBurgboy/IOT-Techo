@@ -19,6 +19,7 @@ So for a school subject called IOT which is about the internet of things I came 
 
 ## (1) Library
 Instal the library called NTPClinent by Fabrice Weinberg.
+![The Libary](iot_images/ifelse.png)
 
 ## (2) Copy the code
 Before you set up the code don't forget to choose the right board and the right com port. 
@@ -125,14 +126,8 @@ If that is the case you will get in your serial monitor a message with the curre
 
 ## (3) If Else with a certain time
 Add this code all the way down in the void loop.
-~~~
-if ( currentHour == 14) {
-    Serial.println("Hello it is 14");
-// do stuff if the condition is true
-}else{
-      Serial.println("Hello it's not 14");
-}
-~~~
+![Code to make an if else](iot_images/ifelse.png)
+ <br>
 If the hour is 14 you will get this message on your serial monitor “Hello it is 14”. If that is not the case you will get the message “Hello it is not 14”. Also don't forget to put two of a '=='instead of one.
 
 ## (4) Error 1 the importance of the else in the if else.
