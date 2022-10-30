@@ -217,7 +217,9 @@ if ( currentHour == 14) {
 If you upload the code this will give the led strip a silver light if it is the 14th hour of the day if it is any other hour the light will turn into green.
 <br>
 ## (6) Error 2 forgetting a bracket
-When I copied the code from the adafruit code to the one of the time I accidentally copied a } to much then I got this error ![One bracket to much](iot_images/error1.png). You can actually see on which line of the code the bracket stands on the error message. Use that to detect and delete the bracket.
+When I copied the code from the adafruit code to the one of the time I accidentally copied a } to much then I got this error ![One bracket to much](iot_images/error1.png).
+<br>
+You can actually see on which line of the code the bracket stands on the error message. Use that to detect and delete the bracket.
 
 ## (7) Error 3 Com port randomly disappears
 So at one point I saved my progress because I was scared to maybe lose my progress. So I did that but after the save when I uploaded some changes I got the following error message ![Can't find com port](iot_images/error2.png). So this is actually an error message that can be quite common in my case and is very easy to fix. So to fix this problem you need to close your Arduino program and just re-open it. Than select the right board and com port and your good to go.
