@@ -217,9 +217,7 @@ if ( currentHour == 14) {
 If you upload the code this will give the led strip a silver light if it is the 14th hour of the day if it is any other hour the light will turn into green.
 <br>
 ## (6) Error 2 forgetting a bracket
-When I copied the code from the adafruit code to the one of the time I accidentally copied a } to much then I got this error ![One bracket to much](iot_images/error1.png).
-<br>
-You can actually see on which line of the code the bracket stands on the error message. Use that to detect and delete the bracket.
+When I copied the code from the adafruit code to the one of the time I accidentally copied a } to much then I got this error ![One bracket to much](iot_images/error1.png).You can actually see on which line of the code the bracket stands on the error message. Use that to detect and delete the bracket.
 
 ## (7) Error 3 Com port randomly disappears
 So at one point I saved my progress because I was scared to maybe lose my progress. So I did that but after the save when I uploaded some changes I got the following error message ![Can't find com port](iot_images/error2.png). So this is actually an error message that can be quite common in my case and is very easy to fix. So to fix this problem you need to close your Arduino program and just re-open it. Than select the right board and com port and your good to go.
@@ -227,8 +225,8 @@ So at one point I saved my progress because I was scared to maybe lose my progre
 ## (8) Make is ready for the night
 So the last step is to make it ready for the night. I decided to code it that from 0 to 8 the night mode will be activated, the rest of the day the light is the day version. The way I did this was with an > sign.
 ![Code to make it that when it's before 8AM the color of the light is different](iot_images/Timepoint.png)
- If you change the if else code in this you should be ready to go. Below you will see the day and the night version of the lights.
  <br>
+ If you change the if else code in this you should be ready to go. Below you will see the day and the night version of the lights.
 ## List of used sources
 [Time Arduino](https://randomnerdtutorials.com/esp8266-nodemcu-date-time-ntp-client-server-arduino/)
 <br>
