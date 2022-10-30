@@ -123,6 +123,9 @@ void loop() {
 }
 ~~~
 Change by the WIFI settings the ssid and password to yours.
+<br>
+![Wifi setup](iot_images/wifisetup.png)
+<br>
 If that is the case you will get in your serial monitor a message with the current day and time.
 
 ## (3) If Else with a certain time
