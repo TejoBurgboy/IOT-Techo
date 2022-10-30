@@ -149,11 +149,9 @@ Put the next type of code on the lower side of the void loop.
 ![Adafruit code in the void setup](iot_images/adafruit2.png)
 <br>
 At last change the if else statements made in step 4 into this.
-
 <br>
 ![Adafruit code in the void loop](iot_images/adafruit3.png)
 <br>
-
 If you upload the code this will give the led strip a silver light if it is the 14th hour of the day if it is any other hour the light will turn into green.
 <br>
 ## (6) Error 2 forgetting a bracket
