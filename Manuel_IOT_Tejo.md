@@ -224,6 +224,7 @@ So at one point I saved my progress because I was scared to maybe lose my progre
 
 ## (8) Make is ready for the night
 So the last step is to make it ready for the night. I decided to code it that from 0 to 8 the night mode will be activated, the rest of the day the light is the day version. The way I did this was with an > sign.
+![
 ~~~
 if ( currentHour > 8){
     Serial.println("it’s day");
@@ -249,6 +250,7 @@ if ( currentHour > 8){
     delay(DELAYVAL); // Pause before next pass through loop
   }
   ~~~
+  ](iot_images/timepoint.png)
  If you change the if else code in this you should be ready to go. Below you will see the day and the night version of the lights.
  <br>
 ## List of used sources
