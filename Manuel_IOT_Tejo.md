@@ -142,19 +142,78 @@ So when I used the If else for the first time every time I uploaded the code it 
 So the next step is to add adafruit into the conversation. Go to examples then go to adafruit neo pixel and then go to simple
 an copy certain parts of the code in certain places.
 Copy this between the library’s and the WIFI settings.
-<br>
-![First part of the adafruitcode](iot_images/adafruit1.png)
-<br>
+~~~
+#include <Adafruit_NeoPixel.h>
+#ifdef __AVR__
+ #include <avr/power.h> // Required for 16 MHz Adafruit Trinket
+#endif
+
+// Which pin on the Arduino is connected to the NeoPixels?
+#define PIN        6 // On Trinket or Gemma, suggest changing this to 1
+
+// How many NeoPixels are attached to the Arduino?
+#define NUMPIXELS 16 // Popular NeoPixel ring size
+
+// When setting up the NeoPixel library, we tell it how many pixels,
+// and which pin to use to send signals. Note that for older NeoPixel
+// strips you might need to change the third parameter -- see the
+// strandtest example for more information on possible values.
+Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
+
+#define DELAYVAL 500 // Time (in milliseconds) to pause between pixels
+~~~
 Don't forget to change the the pin into D5 and change the number om NUMPIXELS into the amount of your ledstrip.
 <br>
 Put the next type of code on the lower side of the void loop.
-<br>
-![Adafruit code in the void setup](iot_images/adafruit2.png)
+~~~
+void loop() {
+  pixels.clear(); // Set all pixel colors to 'off'
+
+  // The first NeoPixel in a strand is #0, second is 1, all the way up
+  // to the count of pixels minus one.
+  for(int i=0; i<NUMPIXELS; i++) { // For each pixel...
+
+    // pixels.Color() takes RGB values, from 0,0,0 up to 255,255,255
+    // Here we're using a moderately bright green color:
+    pixels.setPixelColor(i, pixels.Color(0, 150, 0));
+
+    pixels.show();   // Send the updated pixel colors to the hardware.
+
+    delay(DELAYVAL); // Pause before next pass through loop
+  }
+}
+~~~
 <br>
 At last change the if else statements made in step 4 into this.
-<br>
-![Adafruit code in the void loop](iot_images/adafruit3.png)
-<br>
+
+~~~
+
+if ( currentHour == 14) {
+    Serial.println("Hello it's 14");
+  for(int i=0; i<NUMPIXELS; i++) { // For each pixel...
+
+    // pixels.Color() takes RGB values, from 0,0,0 up to 255,255,255
+    // Here we're using a moderately bright green color:
+        pixels.setPixelColor(i, pixels.Color(123, 132,213));
+
+    pixels.show();   // Send the updated pixel colors to the hardware.
+    delay(DELAYVAL); // Pause before next pass through loop
+  }
+}else{
+      Serial.println("Hello it's not 14");
+        for(int i=0; i<NUMPIXELS; i++) { // For each pixel...
+
+    // pixels.Color() takes RGB values, from 0,0,0 up to 255,255,255
+    // Here we're using a moderately bright green color:
+    pixels.setPixelColor(i, pixels.Color(28, 70, 10));
+
+    pixels.show();   // Send the updated pixel colors to the hardware.
+
+    delay(DELAYVAL); // Pause before next pass through loop
+  }
+}
+~~~
+
 If you upload the code this will give the led strip a silver light if it is the 14th hour of the day if it is any other hour the light will turn into green.
 <br>
 ## (6) Error 2 forgetting a bracket
